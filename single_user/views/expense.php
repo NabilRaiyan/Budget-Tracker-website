@@ -94,6 +94,8 @@
             echo "<td>". $rows["expense_amount"]. "</td>";
             echo "<td>". $rows["expense_type"]. "</td>";
 
+            echo "<td><a href=". '../views/deleteExpense.php?expenseId='.$rows['id'] .">Delete</a></td>";
+
 
             echo "</tr>";
 
