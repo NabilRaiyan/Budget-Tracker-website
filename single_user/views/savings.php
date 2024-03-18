@@ -86,6 +86,7 @@
                 echo "<td>". $rows['savings_amount'] ."</td>";
                 echo "<td>". $rows['savings_type'] ."</td>";
                 echo "<td> <a href=".'../views/editSavings.php?savingsId='.$rows['id'].">Edit<a></td>";
+                echo "<td><a href=".'../views/savings.php?savingsId='.$rows['id'] .">Delete</a></td>";
                 echo "</tr>";
             }
         }
