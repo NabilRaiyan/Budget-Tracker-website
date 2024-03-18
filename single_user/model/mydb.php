@@ -59,6 +59,13 @@
             return $result;
         }
 
+        function updateSavings($conn, $table, $id, $savings_name, $savings_amount, $savings_type){
+            $sql = "UPDATE $table SET id='$id', savings_name='$savings_name', savings_amount='$savings_amount', savings_type='$savings_type'
+            WHERE id='$id'";
+            $result = $conn->query($sql);
+            return $result;
+        }
+
         
     }
 
