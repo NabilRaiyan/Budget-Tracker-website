@@ -66,7 +66,11 @@
             return $result;
         }
 
-        function 
+        function deleteSavings($conn, $table, $id){
+            $sql = "DELETE FROM $table WHERE id='$id'";
+            $result = $conn->query($sql);
+            return $result;
+        }
 
         
     }

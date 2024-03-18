@@ -1,6 +1,7 @@
 <?php 
 include "../model/mydb.php";
 
+
     $savings_name=$savings_amount=$savings_type = "";
     $savings_nameError=$savings_amountError=$savings_typeError=$hasError = "";
     if (isset($_REQUEST['Submit'])){
@@ -55,9 +56,15 @@ include "../model/mydb.php";
         
     }
 
+    // getting all savings from db
+
     $mydb = new Model();
     $conObj = $mydb->OpenConn();
     $result = $mydb->getAllSavings($conObj, "savings");
+
+   
+
+
 
 
 
