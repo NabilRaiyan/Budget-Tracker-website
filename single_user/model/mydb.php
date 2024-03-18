@@ -1,0 +1,58 @@
+<?php 
+
+    class Model{
+        function OpenConn(){
+            $conn = new mysqli("localhost", "root", "", "budget_tracker");
+            return $conn;
+        }
+
+        function addUser($conn, $table, $username, $email, $password, $confirm_password, $monthly_income){
+            $sql = "INSERT INTO $table (username, email, password, confirmPassword, monthly_income) 
+            VALUES ('$username', '$email', '$password', '$confirm_password', '$monthly_income')";
+            $result = $conn->query($sql);
+            return $result;
+        }
+
+
+        function Login($conn, $table, $email, $password){
+            $sql = "SELECT email, password FROM $table WHERE email='$email' AND password = '$password'";
+            $result = $conn->query($sql);
+            return $result;
+        }
+
+
+        function addExpense($conn, $table, $expense_name, $expense_amount, $expense_type){
+            $sql = "INSERT INTO $table (expense_name, expense_amount, expense_type)
+            VALUES ('$expense_name', '$expense_amount', '$expense_type')";
+
+            $result = $conn->query($sql);
+            return $result;
+        }
+
+
+        function getAllExpense($conn, $table){
+            $sql = "SELECT * FROM $table";
+
+            $result = $conn->query($sql);
+            return $result;
+        }
+
+
+        function addSavings($conn, $table, $savings_name, $savings_amount, $savings_type){
+            $sql = "INSERT INTO $table(savings_name, savings_amount, savings_type)
+            VALUES('$savings_name', '$savings_amount', '$savings_type')";
+            $result = $conn->query($sql);
+            return $result;
+        }
+
+
+        function getAllSavings($conn, $table){
+            $sql = "SELECT * FROM $table";
+            $result = $conn->query($sql);
+            return $result;
+        }
+    }
+
+
+
+?>
