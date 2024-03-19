@@ -95,7 +95,6 @@
 
             echo "<td><a href=". '../views/deleteExpense.php?expenseId='.$rows['id'] .">Delete</a></td>";
 
-
             echo "</tr>";
 
             }
