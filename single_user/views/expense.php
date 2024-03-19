@@ -83,6 +83,7 @@
     if ($allExpenseResult->num_rows > 0){
         
         {
+            
             echo "<table>";
 
             echo "<th>ID</th> <th>Expense Name</th> <th>Expense Amount</th> <th>Expense Type</th>";
