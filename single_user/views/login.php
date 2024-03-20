@@ -2,7 +2,6 @@
 include "../controllers/login_controller.php";
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
