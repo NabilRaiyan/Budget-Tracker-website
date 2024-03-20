@@ -15,7 +15,6 @@ include "../controllers/login_controller.php";
         <input type="text" name="email" placeholder="Enter Email">
         <?php echo $emailError; ?><br><br>
 
-
         <label for="pass">Password</label><br><br>
         <input type="password" placeholder="Enter Password" name="password">
         <?php echo $passwordError; ?><br><br>
