@@ -11,7 +11,6 @@ include "../controllers/login_controller.php";
     <title>Log In</title>
 </head>
 <body>
-
     <form action="" method="POST">
         <label for="email">Email</label><br><br>
         <input type="text" name="email" placeholder="Enter Email">
