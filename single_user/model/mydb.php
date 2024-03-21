@@ -37,14 +37,12 @@
             return $result;
         }
 
-
         function addSavings($conn, $table, $savings_name, $savings_amount, $savings_type){
             $sql = "INSERT INTO $table(savings_name, savings_amount, savings_type)
             VALUES('$savings_name', '$savings_amount', '$savings_type')";
             $result = $conn->query($sql);
             return $result;
         }
-
 
         function getAllSavings($conn, $table){
             $sql = "SELECT * FROM $table";
