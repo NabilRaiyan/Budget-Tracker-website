@@ -20,7 +20,6 @@
             return $result;
         }
 
-
         function addExpense($conn, $table, $expense_name, $expense_amount, $expense_type){
             $sql = "INSERT INTO $table (expense_name, expense_amount, expense_type)
             VALUES ('$expense_name', '$expense_amount', '$expense_type')";
@@ -28,7 +27,6 @@
             $result = $conn->query($sql);
             return $result;
         }
-
 
         function getAllExpense($conn, $table){
             $sql = "SELECT * FROM $table";
