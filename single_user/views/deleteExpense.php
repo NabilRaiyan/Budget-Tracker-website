@@ -1,6 +1,1 @@
-<?php
-     include '../controllers/deleteExpenseController.php'
-    
-    
-    
-    ?>
+<?php include '../controllers/deleteExpenseController.php'?>
