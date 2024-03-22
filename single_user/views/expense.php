@@ -74,7 +74,6 @@
     </form>
 
 
-
     <?php 
 
     echo "<h3>All Expenses</h3>";
