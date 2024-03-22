@@ -77,7 +77,9 @@
         }
 
 
-        function 
+        function updateSavings($conn, $table, $id, $expense_name, $expense_amount, $expense_type){
+            $sql = "UPDATE $table SET id='$id', expense_name='$expense_name', expense_amount='$expense_amount', expense_type='$expense_type'
+        }
 
 
         
