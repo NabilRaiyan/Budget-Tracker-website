@@ -27,7 +27,6 @@ if (isset($_REQUEST['Submit'])){
         $hasError = 1;
     }
 
-
     if (!$_REQUEST["savings_type"] == ""){
         $savings_type = $_REQUEST["savings_type"];
     }else{
