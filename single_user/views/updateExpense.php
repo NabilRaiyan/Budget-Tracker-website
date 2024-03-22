@@ -1,6 +1,1 @@
-<?php 
-
-
-
-
-?>
+<?php include "../controllers/updateExpense.php"; ?>

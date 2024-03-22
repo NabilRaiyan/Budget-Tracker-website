@@ -2,5 +2,4 @@
 
 include "../model/mydb.php";
 
-
 ?>
