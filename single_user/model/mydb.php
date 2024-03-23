@@ -35,6 +35,7 @@
             return $result;
         }
 
+        
         function addSavings($conn, $table, $savings_name, $savings_amount, $savings_type){
             $sql = "INSERT INTO $table(savings_name, savings_amount, savings_type)
             VALUES('$savings_name', '$savings_amount', '$savings_type')";
@@ -61,7 +62,7 @@
             return $result;
         }
 
-        
+
         function deleteSavings($conn, $table, $id){
             $sql = "DELETE FROM $table WHERE id='$id'";
             $result = $conn->query($sql);
