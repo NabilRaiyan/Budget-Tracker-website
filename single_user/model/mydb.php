@@ -6,7 +6,7 @@
             return $conn;
         }
 
-        
+
         function addUser($conn, $table, $username, $email, $password, $confirm_password, $monthly_income){
             $sql = "INSERT INTO $table (username, email, password, confirmPassword, monthly_income) 
             VALUES ('$username', '$email', '$password', '$confirm_password', '$monthly_income')";
@@ -47,7 +47,6 @@
             $result = $conn->query($sql);
             return $result;
         }
-
 
         function savingsExist($conn, $table, $id){
             $sql = "SELECT * FROM $table WHERE id='$id'";
