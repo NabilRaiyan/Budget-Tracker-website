@@ -13,7 +13,7 @@
             return $result;
         }
 
-        
+
         function Login($conn, $table, $email, $password){
             $sql = "SELECT email, password FROM $table WHERE email='$email' AND password = '$password'";
             $result = $conn->query($sql);
@@ -28,6 +28,7 @@
             return $result;
         }
 
+        
         function getAllExpense($conn, $table){
             $sql = "SELECT * FROM $table";
 
