@@ -70,7 +70,7 @@
         }
 
 
-        
+
         // Expense code
         function deleteExpense($conn, $table, $id){
             $sql = "DELETE FROM $table WHERE id='$id'";
