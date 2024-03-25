@@ -35,6 +35,7 @@
             return $result;
         }
 
+        
 
         function addSavings($conn, $table, $savings_name, $savings_amount, $savings_type){
             $sql = "INSERT INTO $table(savings_name, savings_amount, savings_type)
