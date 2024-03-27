@@ -27,6 +27,7 @@
             return $result;
         }
 
+        
         function getAllExpense($conn, $table){
             $sql = "SELECT * FROM $table";
 
