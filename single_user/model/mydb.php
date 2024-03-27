@@ -27,7 +27,7 @@
             return $result;
         }
 
-        
+
         function getAllExpense($conn, $table){
             $sql = "SELECT * FROM $table";
 
@@ -42,6 +42,8 @@
             return $result;
         }
 
+
+        
         function getAllSavings($conn, $table){
             $sql = "SELECT * FROM $table";
             $result = $conn->query($sql);
