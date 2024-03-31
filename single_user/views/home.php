@@ -12,6 +12,8 @@
 
     <button id="get_surah">Get All Surah</button>
 
+    <select name="surah_name_list" id="surah_list"></select>
+
     <script src="DOM/api_call.js"></script>
 </body>
 
