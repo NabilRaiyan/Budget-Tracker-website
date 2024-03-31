@@ -1,10 +1,12 @@
 
 
 
-const title = document.getElementById('title');
+// const title = document.getElementById('title');
 
-function change(){
-    title.innerText = "Bye HTML";
-}
+// function change(){
+//     title.innerText = "Bye HTML";
+// }
 
-document.getElementById('change').addEventListener('click', change);
+// document.getElementById('change').addEventListener('click', change);
+
+
