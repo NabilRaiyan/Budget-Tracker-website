@@ -9,8 +9,10 @@
 
     <h1>HOME</h1>
     <h3>Surah List</h3>
-    
 
-    
+    <button id="get_surah">Get All Surah</button>
+
+    <script src="DOM/api_call.js"></script>
 </body>
+
 </html>
