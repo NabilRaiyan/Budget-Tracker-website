@@ -12,6 +12,8 @@ include '../controllers/registration_controller.php';
     <title>Registration</title>
 </head>
 <body>
+
+    
     <div>
         <form method="POST" action="">
 
@@ -39,5 +41,7 @@ include '../controllers/registration_controller.php';
             <button name="Submit" type="submit">Register</button>
         </form>
     </div>
+
+    <script src="DOM/api_call.js"></script>
 </body>
 </html>
