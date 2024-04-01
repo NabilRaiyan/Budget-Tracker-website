@@ -41,11 +41,13 @@ async function getSurahName(){
 
 async function getJuz(){
     var juz = 1;
+    //var random_ayah = Math.floor(Math.random() * surah_length) + 1;
 
-    await fetch("http://api.alquran.cloud/v1/juz/" + juz + "/quran-uthmani?offset=1&limit=1")
+    await fetch("http://api.alquran.cloud/v1/juz/" + juz + "/quran-uthmani?offset=5&limit=2")
         .then((response)=>response.json())
         .then((ayah)=>{
             console.log(ayah.data.ayahs[0].text);
+            console.log(ayah.data.ayahs[0].surah.numberOfAyahs);
         })
 }
 
