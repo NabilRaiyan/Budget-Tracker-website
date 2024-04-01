@@ -39,6 +39,7 @@ async function getSurahName(){
     //     });
 }
 
+// get a specific juz and info
 async function getJuz(){
     var juz = 1;
     //var random_ayah = Math.floor(Math.random() * surah_length) + 1;
