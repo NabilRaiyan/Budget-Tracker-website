@@ -40,6 +40,7 @@ async function getSurahName(){
 }
 
 
+
 // get a specific juz and info
 async function getJuz(){
     var juz = 1;
