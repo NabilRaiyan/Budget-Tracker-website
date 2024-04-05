@@ -53,6 +53,8 @@ async function getJuz(){
         })
 }
 
+
+
 // get all the surah button
 document.getElementById('get_ayah').addEventListener('click', getJuz);
 document.addEventListener('DOMContentLoaded', getSurahName);
