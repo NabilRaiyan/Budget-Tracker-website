@@ -12,7 +12,6 @@
 
     <button id="get_ayah">Get Ayah</button>
 
-
     <h4>Select Juz</h4>
     <select name="surah_name_list" id="surah_list"></select>
 
