@@ -23,7 +23,6 @@
                 echo "<input type='text' name='savings_name' value='". $rows['savings_name']. "'>";
                 echo $savings_nameError;
 
-
                 echo '<br>';
                 echo '<label for="">Savings Amount: </label>';
                 echo "<input type='text' name='savings_amount' value='". $rows['savings_amount']. "'>";
