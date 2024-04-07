@@ -30,7 +30,6 @@
                 echo $savings_amountError;
 
 
-
                 echo '<br>';
                 echo '<label for="">Savings Type: </label>';
                 echo "<input type='text' name='savings_type' value='". $rows['savings_type']. "'>";
