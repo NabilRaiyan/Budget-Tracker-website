@@ -6,9 +6,7 @@
     <title>Home</title>
 </head>
 <body>
-
     <h1>HOME</h1>
-    
     <h3>Surah List</h3>
 
     <button id="get_ayah">Get Ayah</button>
