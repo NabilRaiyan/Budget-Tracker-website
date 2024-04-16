@@ -61,8 +61,6 @@
                     <?php echo $expense_typeError;?>
                 </td>
             </tr>
-
-
             <tr>
                 
                 <td>
