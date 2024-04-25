@@ -75,9 +75,6 @@
             </div>
 
         </form>
-
-
-
     </div>
     
     <script src="../controllers/validation.js"></script>

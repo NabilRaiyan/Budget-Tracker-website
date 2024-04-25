@@ -1,3 +1,6 @@
+
+/* validation style */
+
 body{
     margin: 0;
     background-color: #EBFDEE;
@@ -39,7 +42,7 @@ input{
 }
 
 
-.form-submit-btn{
+.form-submit-btn, #getUserButton{
     background-color: cyan;
     color: black;
     padding: 10px;
@@ -48,7 +51,7 @@ input{
     border-width: 0;
 }
 
-.form-submit-btn:hover{
+.form-submit-btn:hover, #getUserButton:hover{
     cursor: pointer;
     background-color: rgb(169, 255, 255);
 }
