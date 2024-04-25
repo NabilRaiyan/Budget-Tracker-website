@@ -51,7 +51,6 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     }
     
     // If validation successful, you can submit the form or perform further actions
-    // For simplicity, let's just log the form data
     console.log({
       username,
       password,
