@@ -59,6 +59,6 @@
         </div>
     </form>
 
-    <script src="script.js"></script>
+    <script src="../controllers/validation.js"></script>
 </body>
 </html>
