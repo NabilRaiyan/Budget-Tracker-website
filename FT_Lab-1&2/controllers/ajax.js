@@ -6,7 +6,7 @@ document.getElementById('userLookupForm').addEventListener('submit', function(ev
   
   // Make AJAX request
   const xhr = new XMLHttpRequest();
-  const url = `lookup.php?id=${userId}&name=${userName}`;
+  const url = `ajax.php?id=${userId}&name=${userName}`;
   
   xhr.onreadystatechange = function() {
     if (xhr.readyState === XMLHttpRequest.DONE) {
