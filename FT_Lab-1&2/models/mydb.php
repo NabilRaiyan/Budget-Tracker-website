@@ -1,38 +1,31 @@
 <?php
-// Database connection
-$servername = "localhost"; // Replace with your database server name
-$username = "root"; // Replace with your database username
-$password = ""; // Replace with your database password
-$dbname = "customer"; // Replace with your database name
+$userId = $_GET['id'];
+$userName = $_GET['name'];
 
-// Create connection
+// Assuming you have a database connection established
+// Replace this with your actual database connection code
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "customer";
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+  die("Connection failed: " . $conn->connect_error);
 }
 
-// Fetch user data
-if (isset($_GET['id']) && isset($_GET['name'])) {
-    $id = $_GET['id'];
-    $name = $_GET['name'];
+$sql = "SELECT * FROM customerRegistration WHERE id = '$userId' AND name = '$userName'";
+$result = $conn->query($sql);
 
-    $sql = "SELECT * FROM customerRegistration WHERE id = $id AND name = '$name'";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        // User found, return data
-        $user = $result->fetch_assoc();
-        echo json_encode($user);
-    } else {
-        // User not found
-        echo json_encode(array("error" => "User not found"));
-    }
+if ($result->num_rows > 0) {
+  // Output data of each row
+  while($row = $result->fetch_assoc()) {
+    echo "ID: " . $row["id"]. " - Name: " . $row["name"]. "<br>";
+  }
 } else {
-    // Parameters not provided
-    echo json_encode(array("error" => "ID and name parameters are required"));
+  echo "0 results";
 }
-
 $conn->close();
 ?>
