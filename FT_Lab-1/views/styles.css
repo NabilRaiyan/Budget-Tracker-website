@@ -52,4 +52,10 @@ input{
     cursor: pointer;
     background-color: rgb(169, 255, 255);
 }
+
+.err{
+    color: red;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
   

@@ -9,10 +9,11 @@
 <body>
     <div class="container">
         <h1 class="form-group">FinTech</h1>
-        <form method="post" id="myForm" onsubmit="return validateForm()">
+        <form method="post" id="registrationForm">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username">
+                <p id="err errorContainer"></p>
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
@@ -42,14 +43,20 @@
                     <option value="employee">Employee</option>
                     <option value="manager">Manager</option>
                 </select>
+                <p class="err" id="position-err"></p>
+
             </div>
             <div class="form-group">
                 <label for="annual_income">Annual Income:</label>
                 <input type="text" id="annual_income" name="annual_income">
+                <p class="err" id="income-err"></p>
+
             </div>
             <div class="form-group">
                 <label for="years_experience">Years of Experience:</label>
                 <input type="text" id="years_experience" name="years_experience">
+                <p class="err" id="experience-err"></p>
+
             </div>
             <div class="form-group">
                 <label for="industry">Industry:</label>
@@ -60,11 +67,17 @@
                     <option value="Healthcare">Healthcare</option>
                     <option value="Education">Education</option>
                 </select>
+                <p class="err" id="industry-err"></p>
+
             </div>
             <div class="form-group">
                 <button class="form-submit-btn" type="submit">Submit</button>
             </div>
+
         </form>
+
+
+
     </div>
     
     <script src="../controllers/validation.js"></script>
