@@ -9,7 +9,6 @@ document.getElementById('registrationForm').addEventListener('submit', function(
 
     
     // Validation
-   
     const position = document.getElementById('position').value.trim();
     const annualIncome = parseFloat(document.getElementById('annual_income').value);
     const yearsOfExperience = parseInt(document.getElementById('years_experience').value);
