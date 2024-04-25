@@ -13,7 +13,6 @@
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username">
-                <p id="err errorContainer"></p>
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>

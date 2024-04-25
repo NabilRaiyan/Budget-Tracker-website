@@ -10,16 +10,18 @@
 <body>
 <div class="container">
         <h1 class="form-group">FinTech</h1>
-        <form method="post" id="registrationForm">
+        <form method="post" id="">
+
+            <div class="form-group">
+                <label for="userId">Id:</label>
+                <input type="text" id="userId" name="userId">
+            </div>
+
             <div class="form-group">
                 <label for="userName">Username:</label>
                 <input type="text" id="userName" name="userName">
             </div>
-            <div class="form-group">
-                <label for="userId">Password:</label>
-                <input type="text" id="userId" name="userId">
-            </div>
-
+            
             <div class="form-group">
                 <button id="getUserButton" type="submit">Submit</button>
             </div>
@@ -28,6 +30,6 @@
 
     </div>
     
-    <script src="../controllers/validation.js"></script>
+    <script src="../controllers/ajax.js"></script>
 </body>
 </html>
