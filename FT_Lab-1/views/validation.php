@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>FinTech</h1>
+        <h1 class="form-group">FinTech</h1>
         <form method="post" id="myForm" onsubmit="return validateForm()">
             <div class="form-group">
                 <label for="username">Username:</label>
