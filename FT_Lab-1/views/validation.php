@@ -1,42 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Form Validation</title>
-<link rel="stylesheet" href="styles.css">
+  <title>Form</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<form method="POST" id="myForm" onsubmit="return validateForm()">
-  <label for="username">Username:</label>
-  <input type="text" id="username" name="username">
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password">
-  <label for="confirm_password">Confirm Password:</label>
-  <input type="password" id="confirm_password" name="confirm_password">
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email">
-  <label for="address">Address:</label>
-  <input type="text" id="address" name="address">
-  <label for="phone">Phone Number:</label>
-  <input type="tel" id="phone" name="phone">
-  <label for="position">Position:</label>
-  <input type="text" id="position" name="position">
-  <label for="annual_income">Annual Income:</label>
-  <input type="number" id="annual_income" name="annual_income">
-  <label for="years_experience">Years of Experience:</label>
-  <input type="number" id="years_experience" name="years_experience">
-  <label for="industry">Industry:</label>
-  <select id="industry" name="industry">
-    <option value="">Select Industry</option>
-    <option value="IT">IT</option>
-    <option value="Finance">Finance</option>
-    <option value="Healthcare">Healthcare</option>
-    <!-- Add more options as needed -->
-  </select>
-  <button type="submit">Submit</button>
-</form>
-
-<script src="../controllers/validation.js"></script>
+  <div class="container">
+    <h2>FinTech</h2>
+    <form method="POST" action="">
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" placeholder="Enter your address">
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" placeholder="Enter your age">
+      </div>
+      <div class="form-group">
+        <label for="zip">Zip:</label>
+        <input type="text" id="zip" name="zip" placeholder="Enter your zip code">
+      </div>
+      <div class="form-group">
+        <label>Gender:</label>
+        <div class="radio-group">
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label>
+          <div id="gender-error" class="error"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <button type="submit">Confirm</button>
+      </div>
+    </form>
+  </div>
+  <script src="../controllers/validation.js"></script>
 </body>
 </html>
