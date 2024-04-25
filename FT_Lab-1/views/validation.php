@@ -62,7 +62,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <button class="form-submit" type="submit">Submit</button>
+                <button class="form-submit-btn" type="submit">Submit</button>
             </div>
         </form>
     </div>

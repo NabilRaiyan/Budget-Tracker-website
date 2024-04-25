@@ -1,6 +1,7 @@
 body{
     margin: 0;
     background-color: #EBFDEE;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
@@ -20,7 +21,6 @@ body{
 
 label {
     display: block;
-    font-weight: bold;
     margin-bottom: 5px;
     color: #555;
     font-size: 16px;
@@ -30,7 +30,7 @@ label {
 
 input{
     width: 100%;
-    padding: 12px;
+    padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -38,4 +38,18 @@ input{
     transition: border-color 0.3s ease;
 }
 
+
+.form-submit-btn{
+    background-color: cyan;
+    color: black;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border-width: 0;
+}
+
+.form-submit-btn:hover{
+    cursor: pointer;
+    background-color: rgb(169, 255, 255);
+}
   
