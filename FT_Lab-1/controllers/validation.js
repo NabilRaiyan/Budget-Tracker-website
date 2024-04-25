@@ -1,4 +1,5 @@
 function validateForm() {
+    console.log("hello")
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
     var confirm_password = document.getElementById("confirm_password").value;
