@@ -46,7 +46,7 @@
                 $email = $_REQUEST["email"];
             }
         }else{
-            $emailError = "Please enter email address";
+            $emailError = "Please enter email experience";
             $hasError = 1;
         }
 
