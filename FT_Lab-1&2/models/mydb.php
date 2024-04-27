@@ -17,9 +17,10 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     // Retrieving user ID from the AJAX request
     $userId = $_GET['id'];
+    $userName = $_GET["name"];
 
     // Query to fetch user data from the database
-    $sql = "SELECT id, name FROM customerRegistration WHERE id = '$userId'";
+    $sql = "SELECT id, name FROM customerRegistration WHERE id = '$userId' AND name = '$userName'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
