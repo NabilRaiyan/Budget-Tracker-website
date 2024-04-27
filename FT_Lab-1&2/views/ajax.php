@@ -14,10 +14,10 @@
         <label for="userId">User ID:</label>
         <input type="text" id="userId" name="userId" required>
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
         <label for="userName">User Name:</label>
         <input type="text" id="userName" name="userName">
-        </div>
+        </div> -->
         <div class="form-group">
             <button id="getUserButton" type="submit">Search</button>
         </div>
