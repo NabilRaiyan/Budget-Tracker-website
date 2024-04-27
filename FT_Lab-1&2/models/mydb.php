@@ -23,6 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $sql = "SELECT * FROM customerRegistration WHERE id = '$userId'";
     $result = $conn->query($sql);
 
+    
     if ($result->num_rows > 0) {
         // Output data of each row
         while ($row = $result->fetch_assoc()) {
