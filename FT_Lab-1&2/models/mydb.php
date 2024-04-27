@@ -28,7 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         while ($row = $result->fetch_assoc()) {
             $userData = array(
                 "id" => $row["id"],
-                "name" => $row["name"]
+                "name" => $row["name"],
+                "email" => $row["email"],
+                "password" => $row["passowd"],
+                "confirmPassword" => $row["confirmPassword"],
             );
             // Encoding the user data as JSON and sending it back
             echo json_encode($userData);
