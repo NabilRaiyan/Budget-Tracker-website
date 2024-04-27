@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $userName = $_GET["name"];
 
     // Query to fetch user data from the database
-    $sql = "SELECT id, name FROM customerRegistration WHERE id = '$userId'";
+    $sql = "SELECT * FROM customerRegistration WHERE id = '$userId'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
                 "id" => $row["id"],
                 "name" => $row["name"],
                 "email" => $row["email"],
-                "password" => $row["passowd"],
+                "password" => $row["password"],
                 "confirmPassword" => $row["confirmPassword"],
             );
             // Encoding the user data as JSON and sending it back
