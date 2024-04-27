@@ -16,7 +16,7 @@
         </div>
         <div class="form-group">
         <label for="userName">User Name:</label>
-        <input type="text" id="userName" name="userName" required>
+        <input type="text" id="userName" name="userName">
         </div>
         <div class="form-group">
             <button id="getUserButton" type="submit">Search</button>

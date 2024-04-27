@@ -1,31 +1,42 @@
 <?php
-$userId = $_GET['id'];
-$userName = $_GET['name'];
+// Establishing connection to the database
+$servername = "localhost"; // Change this to your database server name
+$username = "root"; // Change this to your database username
+$password = ""; // Change this to your database password
+$dbname = "customer"; // Change this to your database name
 
-// Assuming you have a database connection established
-// Replace this with your actual database connection code
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "customer";
-
+// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+    die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM customerRegistration WHERE id = '$userId' AND name = '$userName'";
-$result = $conn->query($sql);
+// Handling AJAX request
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    // Retrieving user ID from the AJAX request
+    $userId = $_GET['id'];
 
-if ($result->num_rows > 0) {
-  // Output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "ID: " . $row["id"]. " - Name: " . $row["name"]. "<br>";
-  }
-} else {
-  echo "0 results";
+    // Query to fetch user data from the database
+    $sql = "SELECT id, name FROM customerRegistration WHERE id = '$userId'";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // Output data of each row
+        while ($row = $result->fetch_assoc()) {
+            $userData = array(
+                "id" => $row["id"],
+                "name" => $row["name"]
+            );
+            // Encoding the user data as JSON and sending it back
+            echo json_encode($userData);
+        }
+    } else {
+        echo "No user found with the provided ID";
+    }
 }
+
+// Closing database connection
 $conn->close();
 ?>
