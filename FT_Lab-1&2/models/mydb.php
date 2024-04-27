@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $userName = $_GET["name"];
 
     // Query to fetch user data from the database
-    $sql = "SELECT id, name FROM customerRegistration WHERE id = '$userId' AND name = '$userName'";
+    $sql = "SELECT id, name FROM customerRegistration WHERE id = '$userId'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
