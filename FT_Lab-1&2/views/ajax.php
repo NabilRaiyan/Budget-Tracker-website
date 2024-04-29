@@ -24,7 +24,6 @@
         </div>
     </form>
     <div id="userInfo"></div>
-
   </div>
   <!-- Js file link -->
   <script src="../controllers/ajax.js"></script>
