@@ -10,7 +10,6 @@ document.getElementById("userLookupForm").addEventListener("submit", function(ev
   var userId = document.getElementById("userId").value;
   //var userName = document.getElementById("userName").value;
 
-  
   // Setting up the AJAX request
   xhr.open("GET", "../models/mydb.php?id=" + userId, true);
 
