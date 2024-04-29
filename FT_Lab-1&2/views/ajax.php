@@ -23,7 +23,6 @@
             <button id="getUserButton" type="submit">Search</button>
         </div>
     </form>
-
     <div id="userInfo"></div>
 
   </div>
