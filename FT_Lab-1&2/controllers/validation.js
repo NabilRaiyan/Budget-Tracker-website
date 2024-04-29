@@ -21,6 +21,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     let experience_err = '';
 
     
+    
     if (!industry) {
       industry_err += 'Please select an industry.<br>';
       isValid = false;
