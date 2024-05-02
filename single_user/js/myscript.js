@@ -1,4 +1,5 @@
 
+// creating XMLHttpRequest request
 function loadDoc() {
     var xhttp = new XMLHttpRequest();
     var id = document.getElementById('user_text').value;
