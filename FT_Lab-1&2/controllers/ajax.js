@@ -27,5 +27,6 @@ document.getElementById("userLookupForm").addEventListener("submit", function(ev
           userInfoDiv.innerHTML = "<p>User ID: " + userData.id + "</p><p>User Name: " + userData.name + "</p><p>Email: " + userData.email + 
                                   "</p><p>Password: " + userData.password + "</p><p>Confirm Password: " + userData.confirmPassword + "</p>";
       }
+     
   };
 });
