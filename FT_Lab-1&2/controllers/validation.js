@@ -7,7 +7,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     document.getElementById('experience-err').innerHTML = '';
     document.getElementById('industry-err').innerHTML = '';
 
-    
+
     // Validation
     const position = document.getElementById('position').value.trim();
     const annualIncome = parseFloat(document.getElementById('annual_income').value);
@@ -21,6 +21,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     let experience_err = '';
 
 
+    // cheaking
     if (!industry) {
       industry_err += 'Please select an industry.<br>';
       isValid = false;
