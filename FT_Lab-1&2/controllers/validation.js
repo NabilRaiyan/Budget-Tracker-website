@@ -21,7 +21,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     let experience_err = '';
 
 
-    // cheaking
+    // cheaking if there are any invalid input
     if (!industry) {
       industry_err += 'Please select an industry.<br>';
       isValid = false;
