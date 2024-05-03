@@ -22,7 +22,7 @@ async function getSurahName(){
         dropdown.add(option);
     }
 
-    
+
     // await fetch("http://api.alquran.cloud/v1/surah")
     //     .then((response)=>response.json())
     //     .then((surahs)=>{
@@ -51,7 +51,6 @@ async function getJuz(){
             console.log(ayah.data.ayahs[0].surah.numberOfAyahs);
         })
 }
-
 
 // get all the surah button
 document.getElementById('get_ayah').addEventListener('click', getJuz);
