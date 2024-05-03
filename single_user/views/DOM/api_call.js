@@ -9,6 +9,7 @@
 // document.getElementById('change').addEventListener('click', change);
 
 
+
 // get all surah names
 // getting all surah name and adding in the dropdown menu
 async function getSurahName(){
