@@ -3,6 +3,7 @@ include ('../models/personaluserdb.php');
 
 $hasError = false; // Use a boolean variable for error checking
 
+
 $data = stripslashes(file_get_contents("php://input"));
 $mydata = json_decode($data, true);
 
