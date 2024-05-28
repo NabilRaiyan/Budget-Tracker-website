@@ -6,6 +6,7 @@ $hasError = false; // Use a boolean variable for error checking
 $data = stripslashes(file_get_contents("php://input"));
 $mydata = json_decode($data, true);
 
+
 if (empty($mydata['name']) || empty($mydata['amount']) || empty($mydata['type'])) {
     $hasError = true; // Set error flag if any required field is missing
 }
